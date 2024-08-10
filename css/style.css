@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+header {
+    background-image: url("../img/header.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* home */
+.home {
+    padding: 100px 0px;
+    height: 80vh;
+    background: linear-gradient(-50deg, #616455, #dddcd7, #e2c9cc, #e7627d, #e77fa5, #944977, #cf57b7, #585088);
+    background-size: 180% 180%;
+    animation: bg 12s ease infinite;
+}
+
+@keyframes bg {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.home .home-information .fwd {
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);       background-clip: text;
+    color: transparent;
+}
