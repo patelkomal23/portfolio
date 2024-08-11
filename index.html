@@ -14,7 +14,7 @@
 <body>
 
     <!------------------------- header ----------------------->
-    <header class="navbar navbar-expand-lg bg-black py-2 " data-bs-theme="dark">
+    <header class="navbar navbar-expand-lg bg-black py-2 fixed-top" data-bs-theme="dark">
         <div class="container">
             <a href="javascript:void(0)" class="navbar-brand text-white fw-semibold fs-3">
                 <span>&lt</span><img src="img/header-logo.png" alt="" srcset=""
@@ -37,7 +37,7 @@
                         <a href="javascript:void(0)" class="nav-link text-white fw-semibold">Skills</a>
                     </li>
                     <li class="mx-lg-2">
-                        <a href="javascript:void(0)" class="nav-link text-white fw-semibold">Contacts</a>
+                        <a href="#contact" class="nav-link text-white fw-semibold">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -48,19 +48,19 @@
         <section class="home">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 mb-5">
+                    <div class="col-lg-6 col-12">
                         <div class="home-contain">
-                            <div class="home-title">
-                                <h1 class="fw-bold">Komal Patel</h1>
+                            <div class="home-title mt-4">
+                                <h1 class="fw-bold display-3">Komal Patel</h1>
                                 <h2 class="ah-headline">
-                                    <span class="text-black">I am</span>
+                                    <span class="text-black fs-2">I am into</span>
                                     <span class="ah-words-wrapper">
-                                        <b class="is-visible fst-italic fs-5 text-white">Developer</b>
-                                        <b class="fst-italic fs-5 text-white">Web Designer</b>
+                                        <b class="is-visible fst-italic fs-2 text-white">Developer</b>
+                                        <b class="fst-italic fs-2 text-white">Web Designer</b>
                                     </span>
                                 </h2>
                             </div>
-                            <div class="home-information mt-4">
+                            <div class="home-information fs-4 mt-4">
                                 <a href="javascript:void(0)"
                                     class="text-decoration-none text-black border border-info rounded-pill p-2 px-3 fw-semibold">
                                     <i class="bi bi-stars"></i> Fullstack Web Developer</a>
@@ -77,7 +77,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6 col-12">
                         <div class="home-img">
                             <img src="img/home1.png" alt="home-img" srcset="" class="img-fluid">
                         </div>
@@ -91,15 +91,13 @@
                 <h2 class="mb-5 fw-bold">About Me</h2>
             </div>
             <div class="container">
-                
                 <div class="row">
                     <div class="col-12 col-lg-4">
                         <div class="about-img">
-                            <img src="img/about.jpg" class="img-thumbnail" alt="img" srcset="">
+                            <img src="img/about1.jpg" class="img-thumbnail" alt="img" srcset="">
                         </div>
                     </div>
                     <div class="col-8">
-                        <h2 class="fw-bolder">LEARN MORE ABOUT ME</h2>
                         <div class="row">
                             <div class="col-12 col-lg-6">
                                 <div class="about-list">
@@ -126,8 +124,7 @@
                                             <span>&nbspGraduate</span>
                                         </li>
                                         <li class="mt-3"><i class="bi bi-chevron-right"></i><strong> Email:
-                                            </strong><span>&nbspPatelkomal2332@gmail.com</span></li>
-                                        <!-- <li class="mt-3"><i class="bi bi-chevron-right"></i><strong> city: </strong><span>&nbsp Navsari Gujrat</span></li> -->
+                                            </strong><span>&nbsppatelkomal2332@gmail.com</span></li>
                                     </ul>
                                 </div>
                             </div>
@@ -146,27 +143,150 @@
         <section class="resume" id="resume">
             <div class="container">
                 <div class="resume-title text-center">
-                        <h2 class="mb-5 fw-bold">Resume</h2>
+                    <h2 class="mb-4 fw-bold">Resume</h2>
                 </div>
-                <div class="card rounded-4 mb-5">
-                    <div class="card-body p-5">
+                <h2 class="text-black fw-bolder mb-3">Education</h2>
+                <div class="card resume-card rounded-4 bg-transparent mb-2">
+                    <div class="card-body p-4">
                         <div class="row align-items-center gx-5">
-                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                <div class="bg-light p-4 rounded-4">
-                                    <div class="text-primary fw-bolder mb-2">2021 - 2023</div>
-                                    <div class="mb-2">
-                                        <div class="fw-bolder">Naranlala college of professional & applied sciences,</div>
-                                        <div class="text-muted">Navsari, Gujrat.</div>
-                                    </div>
-                                    <div class="fst-italic">
-                                        <div class="text-black">Bachelor of Computer Application - BCA</div>
+                            <div class="col">
+                                <div class="resume-inner  text-center text-lg-start mb-4 mb-lg-0">
+                                    <div class="bg-white p-4 rounded-4">
+                                        <div class="text-primary fw-bolder mb-2">2021 - 2023</div>
+                                        <div class="mb-2">
+                                            <div class="fw-bolder">Naranlala college of professional & applied sciences,
+                                            </div>
+                                            <div class="text-muted">Navsari, Gujrat.</div>
+                                        </div>
+                                        <div class="fst-italic">
+                                            <div class="text-black">Bachelor of Computer Application- BCA</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-8 text-black">
-                                <div>Incorporating my Bachelor of Computer Applications (BCA) degree into my ongoing Full Stack Development studies at Red & White Multimedia Education, I'm equipped with a robust academic foundation and practical coding skills. This blend of theoretical knowledge and hands-on experience positions me as a capable and adaptable candidate poised to excel in the dynamic field of technology.</div>
+                                <div class="resume-contain">
+                                    Incorporating my Bachelor of Computer Applications (BCA) degree into my ongoing Full
+                                    Stack Development studies at Red & White Multimedia Education, I'm equipped with a
+                                    robust academic foundation and practical coding skills. This blend of theoretical
+                                    knowledge and hands-on experience positions me as a capable and adaptable candidate
+                                    poised to excel in the dynamic field of technology.
+                                </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="card rounded-4 bg-transparent mt-5">
+                    <div class="card-body p-4">
+                        <div class="row align-items-center gx-5">
+                            <div class="col">
+                                <div class="resume-inner  text-center text-lg-start mb-4 mb-lg-0">
+                                    <div class="bg-white p-4 rounded-4">
+                                        <div class="text-primary fw-bolder mb-2">2024</div>
+                                        <div class="mb-2">
+                                            <div class="fw-bolder">Red & White Multimedia Education,
+                                            </div>
+                                            <div class="text-muted">Navsari, Gujrat.</div>
+                                        </div>
+                                        <div class="fst-italic">
+                                            <div class="text-black">Full Stack Development</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 text-black">
+                                <div class="resume-contain">
+                                    I am currently pursuing an intensive Full Stack Development program at Red & White
+                                    Multimedia Education in Navsari. This comprehensive course provides in-depth
+                                    training in both front-end and back-end technologies, including HTML, CSS,
+                                    JavaScript, React, Node.js, and MongoDB. Through hands-on projects, I am developing
+                                    the skills necessary to design, develop, and maintain sophisticated web
+                                    applications.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------- Contacts ----------------------->
+        <section class="contact" id="contact">
+            <div class="contact-title text-center">
+                <h2 class="mb-5 fw-bold">Contact</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="contact-item card border-0 rounded-0 bg-light px-4 p-3 mb-4">
+                                    <i class="bi bi-geo-alt text-primary fs-1"></i>
+                                    <h3 class="fs-5 fw-bold mt-3">Address</h3>
+                                    <p class="mt-2">31/12,suraj deep society, <br>Navsari,Gujarat, 396450</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="contact-item card border-0 rounded-0 bg-light px-4 p-3 ">
+                                    <i class="bi bi-telephone  text-primary fs-1"></i>
+                                    <h3 class="fs-5 fw-bold mt-3">Call Us</h3>
+                                    <p class="mt-2">+91 95109 33052<br>+91 94848 42425</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="contact-item card border-0 rounded-0 bg-light px-4 p-3 mt-4">
+                                    <i class="bi bi-envelope text-primary fs-1"></i>
+                                    <h3 class="fs-5 fw-bold mt-3">Email Us</h3>
+                                    <p class="mt-2">patelkomal2332@gmail.com<br>komalpatel5575@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="contact-item card border-0 rounded-0 bg-light px-4 p-3 mt-4">
+                                    <i class="bi bi-share text-primary fs-1"></i>
+                                    <h3 class="fs-5 fw-bold mt-3">Social Profiles</h3>
+                                    <div class="contact-social-link mt-4">
+                                        <a href="https://github.com/patelkomal23" target="_blank"
+                                            class="text-decoration-none p-2 fs-2 text-black"><i
+                                                class="bi bi-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/patel-komal-912683317" target="_blank"
+                                            class="text-decoration-none p-2 fs-2 text-black"><i
+                                                class="bi bi-linkedin"></i></a>
+                                        <a href="https://www.instagram.com/_komal.__23" target="_blank"
+                                            class="text-decoration-none p-2 fs-2 text-black"><i
+                                                class="bi bi-instagram"></i></a>
+                                        <a href="javascript:void(0)" target="_blank"
+                                            class="text-decoration-none p-2 fs-2 text-black"><i
+                                                class="bi bi-discord"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="contact-contain bg-light p-5">
+                            <form action="">
+                                <div class="row  gy-4">
+                                    <div class="col-md-6">
+                                        <input type="text" name="name" class="form-control rounded-0" placeholder="Your Name"
+                                            required="">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" class="form-control rounded-0" name="email" placeholder="Your Email"
+                                            required="">
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" class="form-control rounded-0" name="subject" placeholder="Subject"
+                                            required="">
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control rounded-0" name="message" rows="6" placeholder="Message"
+                                            required=""></textarea>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button class="btn btn-primary" type="submit">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>  
                     </div>
                 </div>
             </div>
