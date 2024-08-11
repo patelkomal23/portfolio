@@ -13,7 +13,6 @@ header {
 
 /* home */
 .home {
-    padding: 100px 0px;
     height: 80vh;
     background: linear-gradient(-50deg, #616455, #dddcd7, #e2c9cc, #e7627d, #e77fa5, #944977, #cf57b7, #585088);
     background-size: 180% 180%;
@@ -34,7 +33,42 @@ header {
     }
 }
 
-.home .home-information .fwd {
-    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);       background-clip: text;
+.home{
+ padding: 70px 0;
+
+}
+
+.home .home-contain{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-clip: text;
     color: transparent;
+}
+
+.home .home-information a {
+    transition: 0.2s;
+}
+
+.home .home-information a:hover {
+    background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+    border: none;
+}
+
+.home .home-social-link a i {
+    color: black;
+}
+
+.home .home-social-link a i:hover {
+    background-image: linear-gradient(to left, #55b4d4, #5758e0);
+    background-clip: text;
+    color: transparent;
+}
+.home .home-img img{
+    margin-top: 50px;
+
+    width:300px !important;
+    height: 310px !important;
+}
+.home .home-img .particles-js{
+    width:300px;
+    height: 310px;
 }
