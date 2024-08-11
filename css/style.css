@@ -13,7 +13,8 @@ header {
 
 /* home */
 .home {
-    height: 80vh;
+    /* padding: 80px 0; */
+    height: auto;
     background: linear-gradient(-50deg, #616455, #dddcd7, #e2c9cc, #e7627d, #e77fa5, #944977, #cf57b7, #585088);
     background-size: 180% 180%;
     animation: bg 12s ease infinite;
@@ -33,12 +34,11 @@ header {
     }
 }
 
-.home{
- padding: 70px 0;
-
+.home .home-contain {
+    margin-top: 30%;
 }
 
-.home .home-contain{
+.home .home-title {
     background-image: linear-gradient(to right, #434343 0%, black 100%);
     background-clip: text;
     color: transparent;
@@ -62,13 +62,40 @@ header {
     background-clip: text;
     color: transparent;
 }
-.home .home-img img{
-    margin-top: 50px;
 
-    width:300px !important;
-    height: 310px !important;
+.home .home-img img {
+    width: 500px !important;
+    height: 500px !important;
+    object-position: center;
+
 }
-.home .home-img .particles-js{
-    width:300px;
-    height: 310px;
+
+/* about */
+.about {
+    padding: 80px 0;
+}
+
+.about .about-title h2 {
+    color: #015761;
+    font-size: 50px;
+}
+
+.about .about-img img {
+    width: auto;
+    object-fit: cover;
+}
+
+.about .col-8 h2 {
+    background-image: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%);
+    background-clip: text;
+    color: transparent;
+}
+/* resume */
+.resume{
+    padding: 80px 0;
+    background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+}
+.resume .resume-title h2 {
+    color: #015761;
+    font-size: 50px;
 }
