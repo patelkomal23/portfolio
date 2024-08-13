@@ -5,8 +5,8 @@
 }
 
 /* header */
-header .navbar-nav {
-    background-color: #031540;
+header {
+    background-color: #000000;
 }
 
 header .btn-close {
@@ -24,12 +24,12 @@ header a {
 
 header a:hover,
 header a.active {
-    color: #00abf0 !important;
+    color: #79a1ff !important;
 }
 
 .home {
     height: 100vh;
-    background: linear-gradient(-90deg, #031540 65%, #fff 30%);
+    background: linear-gradient(-90deg, #79a1ff 65%, #fff 30%);
 }
 
 /* home */
@@ -37,21 +37,21 @@ header a.active {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #00abf0;
+    border: 2px solid #0a012c;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
-    color: #00abf0;
+    color: #0a012c;
     margin: 25px 15px 30px 0;
     transition: .5 ease;
 }
 
 .home .home-social-link a i:hover {
-    background: #00abf0;
+    background: #0a012c;
     color: #fff;
 }
 
 .home-btn {
     padding: 12px 28px;
-    background: #00abf0;
+    background: #0a012c;
     box-shadow: 0 2px 5px ☐ rgba(0, 0, 0, .2);
     border: 2px solid transparent;
     transition: .5s ease;
@@ -59,18 +59,18 @@ header a.active {
 
 .home-btn:hover {
     background: transparent;
-    color: #00abf0;
-    border-color: #00abf0;
+    color: #0a012c;
+    border-color: #0a012c;
 }
 
 .home-image {
     width: 500px;
     height: 500px;
-    background: #031540;
+    background: #79a1ff;
     border-radius: 50%;
     border: 25px solid #ffffff;
     margin-top: 20% !important;
-    outline: 25px solid #031540;
+    outline: 25px solid #79a1ff;
 
 }
 
@@ -85,7 +85,7 @@ header a.active {
 }
 
 .home .home-contain b {
-    color: #00abf0;
+    color: #0a012c;
 }
 
 /* about */
