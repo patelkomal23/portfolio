@@ -15,38 +15,38 @@
 
     <!------------------------- header ----------------------->
 
-    <header class="navbar navbar-expand-lg bg-secondary fixed-top">
+    <header class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a href="javascript:void(0)" class="navbar-brand">
-                <span class="text-white">&lt</span><img src="img/header-logo.png" alt="img" srcset=""
-                    style="width: 40%; height: 50%;"><span class="text-white">&#47&gt</span></a>
+                <span class="text-black">&lt</span><img src="img/header.png" alt="img" srcset=""
+                    style="width: 40%; height: 50%;"><span class="text-black">&#47&gt</span></a>
             <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#header">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end" id="header">
+            <div class="offcanvas offcanvas-end bg-dark" id="header">
                 <div class="offcanvas-header">
-                    <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5> -->
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvasDark"
+                        aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body text-black">
-                    <ul class="navbar-nav align-items-lg-center">
-                        <li class="mx-lg-5">
-                            <a href="#home" class="nav-link text-black  fw-semibold active px-lg-2rounded-0">Home</a>
+                    <ul class="navbar-nav align-items-lg-center ms-auto">
+                        <li class="mx-lg-2">
+                            <a href="#home" class="nav-link text-white fw-semibold active">Home </a>
                         </li>
-                        <li class="me-lg-5">
-                            <a href="#about" class="nav-link text-black fw-semibold px-lg-2rounded-0">About </a>
+                        <li class="mx-lg-2">
+                            <a href="#home" class="nav-link text-white fw-semibold">About</a>
                         </li>
-                        <li class="me-lg-5">
-                            <a href="#resume" class="nav-link text-black fw-semibold px-lg-2rounded-0">Resume</a>
+                        <li class="mx-lg-3">
+                            <a href="#home" class="nav-link text-white fw-semibold">Resume</a>
                         </li>
-                        <li class="me-lg-5">
-                            <a href="#project" class="nav-link text-black fw-semibold px-lg-2rounded-0">Project</a>
+                        <li class="me-lg-4">
+                            <a href="#home" class="nav-link text-white fw-semibold">Project</a>
                         </li>
-                        <li class="me-lg-5">
-                            <a href="javascript:void(0)" class="nav-link text-black fw-semibold px-lg-2rounded-0">Skills</a>
+                        <li class="me-lg-4">
+                            <a href="#home" class="nav-link text-white fw-semibold">Skills</a>
                         </li>
-                        <li class="me-lg-5">
-                            <a href="#contact" class="nav-link text-black fw-semibold px-lg-2rounded-0">Contact</a>
+                        <li class="me-lg-4">
+                            <a href="#home" class="nav-link text-white fw-semibold">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -55,14 +55,20 @@
     </header>
     <main>
         <!------------------------- home ----------------------->
-        <section class="home py-4">
+        <section class="home d-flex align-items-center  justify-content-between">
             <div class="container py-5">
                 <div class="row py-5">
                     <div class="col-lg-6 py-5 mr-auto">
-                        <div class="home-contain">
+                        <div class="home-image  d-flex align-items-center  justify-content-center">
+                            <img src="img/profile-pic-removebg-preview.png" alt="" class="position-relative img-fluid"
+                                srcset="">
+                        </div>
+                    </div>
+                    <div class="col-6 py-5 mr-auto">
+                        <div class="home-contain text-right">
                             <div class="home-title mt-4">
-                                <h4 class="fw-bold">Hello, It's Me</h4>
-                                <h1 class="fw-bold text-black display-5">Komal Patel</h1>
+                                <h4 class="fw-bold text-white">Hello, It's Me</h4>
+                                <h1 class="fw-bold text-white display-5">Komal Patel</h1>
                                 <h2 class="ah-headline">
                                     <span class="text-black fs-2">And I'm a</span>
                                     <span class="ah-words-wrapper">
@@ -70,30 +76,32 @@
                                         <b class="fst-italic fs-2">Web Designer...</b>
                                     </span>
                                 </h2>
-                                <h4 class="fwd">I'm a passionate <span class="border-bottom border-3">Fullstack
-                                    Web Developer
-                                </span> from Gujarat, India</h4>
-                                <div class="home-social-link mt-3 mb-5">
+                                <!-- <h4 class="fwd">I'm a passionate <span class="border-bottom border-3">Fullstack
+                                        Web Developer
+                                    </span> from Gujarat, India</h4> -->
+                                <div class="home-social-link">
                                     <a href="https://github.com/patelkomal23" target="_blank"
-                                        class="text-decoration-none p-2 fs-2 text-white"><i class="bi bi-github"></i></a>
+                                        class="text-decoration-none"><i
+                                            class="bi bi-github  d-inline-flex justify-content-center align-items-center rounded-5 fs-5"></i></a>
                                     <a href="https://www.linkedin.com/in/patel-komal-912683317" target="_blank"
-                                        class="text-decoration-none p-2 fs-2 text-white"><i class="bi bi-linkedin"></i></a>
+                                        class="text-decoration-none"><i
+                                            class="bi bi-linkedin  d-inline-flex justify-content-center align-items-center rounded-5 fs-5"></i></a>
                                     <a href="https://www.instagram.com/_komal.__23" target="_blank"
-                                        class="text-decoration-none p-2 fs-2 text-white"><i class="bi bi-instagram"></i></a>
-                                    <a href="javascript:void(0)" target="_blank"
-                                        class="text-decoration-none p-2 fs-2 text-white"><i class="bi bi-discord"></i></a>
+                                        class="text-decoration-none"><i
+                                            class="bi bi-instagram  d-inline-flex justify-content-center align-items-center rounded-5 fs-5"></i></a>
+                                    <a href="javascript:void(0)" target="_blank" class="text-decoration-none"><i
+                                            class="bi bi-discord  d-inline-flex justify-content-center align-items-center rounded-5 fs-5"></i></a>
                                 </div>
-                               <a href="" class="home-btn text-decoration-none">Project</a>
-                               <a href="" class="home-btn text-decoration-none">Contact</a>
+                                <a href="" class="home-btn text-decoration-none d-inline-block rounded-5 fs-5 fw-semibold text-white">Project</a>
+                                <a href="" class="home-btn text-decoration-none d-inline-block rounded-5 fs-5 fw-semibold text-white">Contact</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
-		 <!------------------------- about ----------------------->
-         <!-- <section class="about bg-white" id="about">
+        <!------------------------- about ----------------------->
+        <section class="about bg-white" id="about">
             <div class="about-title text-center">
                 <h2 class="mb-5 fw-bold">About Me</h2>
             </div>
@@ -149,7 +157,7 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
     </main>
     <!-- <footer class="footer">
         <div class="container">
