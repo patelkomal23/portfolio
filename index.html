@@ -14,79 +14,86 @@
 <body>
 
     <!------------------------- header ----------------------->
-    <header class="navbar navbar-expand-lg bg-black py-2 fixed-top" data-bs-theme="dark">
+
+    <header class="navbar navbar-expand-lg bg-secondary fixed-top">
         <div class="container">
-            <a href="javascript:void(0)" class="navbar-brand text-white fw-semibold fs-3">
-                <span>&lt</span><img src="img/header-logo.png" alt="" srcset=""
-                    style="width: 40%; height: 40%;"><span>&#47&gt</span></a>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <a href="javascript:void(0)" class="navbar-brand">
+                <span class="text-white">&lt</span><img src="img/header-logo.png" alt="img" srcset=""
+                    style="width: 40%; height: 50%;"><span class="text-white">&#47&gt</span></a>
+            <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#header">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <nav class=" navbar-collapse collapse" id="menu">
-                <ul class="navbar-nav align-items-lg-center ms-auto">
-                    <li class="mx-lg-2">
-                        <a href="#about" class="nav-link text-white fw-semibold">About </a>
-                    </li>
-                    <li class="mx-lg-2">
-                        <a href="#resume" class="nav-link text-white fw-semibold">Resume</a>
-                    </li>
-                    <li class="mx-lg-2">
-                        <a href="javascript:void(0)" class="nav-link text-white fw-semibold">Project</a>
-                    </li>
-                    <li class="me-lg-2">
-                        <a href="javascript:void(0)" class="nav-link text-white fw-semibold">Skills</a>
-                    </li>
-                    <li class="mx-lg-2">
-                        <a href="#contact" class="nav-link text-white fw-semibold">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="offcanvas offcanvas-end" id="header">
+                <div class="offcanvas-header">
+                    <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body text-black">
+                    <ul class="navbar-nav align-items-lg-center">
+                        <li class="mx-lg-5">
+                            <a href="#home" class="nav-link text-black  fw-semibold active px-lg-2rounded-0">Home</a>
+                        </li>
+                        <li class="me-lg-5">
+                            <a href="#about" class="nav-link text-black fw-semibold px-lg-2rounded-0">About </a>
+                        </li>
+                        <li class="me-lg-5">
+                            <a href="#resume" class="nav-link text-black fw-semibold px-lg-2rounded-0">Resume</a>
+                        </li>
+                        <li class="me-lg-5">
+                            <a href="#project" class="nav-link text-black fw-semibold px-lg-2rounded-0">Project</a>
+                        </li>
+                        <li class="me-lg-5">
+                            <a href="javascript:void(0)" class="nav-link text-black fw-semibold px-lg-2rounded-0">Skills</a>
+                        </li>
+                        <li class="me-lg-5">
+                            <a href="#contact" class="nav-link text-black fw-semibold px-lg-2rounded-0">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <main>
         <!------------------------- home ----------------------->
-        <section class="home">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-12">
+        <section class="home py-4">
+            <div class="container py-5">
+                <div class="row py-5">
+                    <div class="col-lg-6 py-5 mr-auto">
                         <div class="home-contain">
                             <div class="home-title mt-4">
-                                <h1 class="fw-bold display-3">Komal Patel</h1>
+                                <h4 class="fw-bold">Hello, It's Me</h4>
+                                <h1 class="fw-bold text-black display-5">Komal Patel</h1>
                                 <h2 class="ah-headline">
-                                    <span class="text-black fs-2">I am</span>
+                                    <span class="text-black fs-2">And I'm a</span>
                                     <span class="ah-words-wrapper">
-                                        <b class="is-visible fst-italic fs-2 text-white">Developer...</b>
-                                        <b class="fst-italic fs-2 text-white">Web Designer...</b>
+                                        <b class="is-visible fst-italic fs-2">Developer...</b>
+                                        <b class="fst-italic fs-2">Web Designer...</b>
                                     </span>
                                 </h2>
+                                <h4 class="fwd">I'm a passionate <span class="border-bottom border-3">Fullstack
+                                    Web Developer
+                                </span> from Gujarat, India</h4>
+                                <div class="home-social-link mt-3 mb-5">
+                                    <a href="https://github.com/patelkomal23" target="_blank"
+                                        class="text-decoration-none p-2 fs-2 text-white"><i class="bi bi-github"></i></a>
+                                    <a href="https://www.linkedin.com/in/patel-komal-912683317" target="_blank"
+                                        class="text-decoration-none p-2 fs-2 text-white"><i class="bi bi-linkedin"></i></a>
+                                    <a href="https://www.instagram.com/_komal.__23" target="_blank"
+                                        class="text-decoration-none p-2 fs-2 text-white"><i class="bi bi-instagram"></i></a>
+                                    <a href="javascript:void(0)" target="_blank"
+                                        class="text-decoration-none p-2 fs-2 text-white"><i class="bi bi-discord"></i></a>
+                                </div>
+                               <a href="" class="home-btn text-decoration-none">Project</a>
+                               <a href="" class="home-btn text-decoration-none">Contact</a>
                             </div>
-                            <div class="home-information fs-4 mt-4">
-                                <a href="javascript:void(0)"
-                                    class="text-decoration-none text-black border border-info rounded-pill p-2 px-3 fw-semibold">
-                                    <i class="bi bi-stars"></i> Fullstack Web Developer</a>
-                            </div>
-                            <div class="home-social-link mt-5">
-                                <a href="https://github.com/patelkomal23" target="_blank"
-                                    class="text-decoration-none p-2 fs-2 text-white"><i class="bi bi-github"></i></a>
-                                <a href="https://www.linkedin.com/in/patel-komal-912683317" target="_blank"
-                                    class="text-decoration-none p-2 fs-2 text-white"><i class="bi bi-linkedin"></i></a>
-                                <a href="https://www.instagram.com/_komal.__23" target="_blank"
-                                    class="text-decoration-none p-2 fs-2 text-white"><i class="bi bi-instagram"></i></a>
-                                <a href="javascript:void(0)" target="_blank"
-                                    class="text-decoration-none p-2 fs-2 text-white"><i class="bi bi-discord"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-12">
-                        <div class="home-img">
-                            <img src="img/home1.png" alt="home-img" srcset="" class="img-fluid">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!------------------------- about ----------------------->
-        <section class="about bg-white" id="about">
+        
+		 <!------------------------- about ----------------------->
+         <!-- <section class="about bg-white" id="about">
             <div class="about-title text-center">
                 <h2 class="mb-5 fw-bold">About Me</h2>
             </div>
@@ -138,197 +145,44 @@
                                     </ul>
                                 </div>
                             </div>
-                            <p class="my-0">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse velit architecto unde ut
-                                impedit quo dicta? Voluptate magnam eveniet, eligendi dignissimos reprehenderit
-                                voluptates rem quidem maxime optio quaerat adipisci voluptas. Lorem ipsum dolor sit amet
-                                consectetur adipisicing elit.
-                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!------------------------- resume ----------------------->
-        <section class="resume" id="resume">
-            <div class="container">
-                <div class="resume-title text-center">
-                    <h2 class="mb-4 fw-bold">Resume</h2>
-                </div>
-                <h2 class="text-black fw-bolder mb-3">Education</h2>
-                <div class="card resume-card rounded-4 bg-transparent mb-2">
-                    <div class="card-body p-4">
-                        <div class="row align-items-center gx-5">
-                            <div class="col">
-                                <div class="resume-inner text-center text-lg-start mb-4 mb-lg-0">
-                                    <div class="bg-white p-4 rounded-4">
-                                        <div class="text-primary fw-bolder mb-2">2021 - 2023</div>
-                                        <div class="mb-2">
-                                            <div class="fw-bolder">Naranlala college of professional & applied sciences,
-                                            </div>
-                                            <div class="text-muted">Navsari, Gujrat.</div>
-                                        </div>
-                                        <div class="fst-italic">
-                                            <div class="text-black">Bachelor of Computer Application- BCA</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-8 text-black">
-                                <div class="resume-contain">
-                                    Incorporating my Bachelor of Computer Applications (BCA) degree into my ongoing Full
-                                    Stack Development studies at Red & White Multimedia Education, I'm equipped with a
-                                    robust academic foundation and practical coding skills. This blend of theoretical
-                                    knowledge and hands-on experience positions me as a capable and adaptable candidate
-                                    poised to excel in the dynamic field of technology.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card resume-card rounded-4 bg-transparent mt-5">
-                    <div class="card-body p-4">
-                        <div class="row align-items-center gx-5">
-                            <div class="col">
-                                <div class="resume-inner  text-center text-lg-start mb-4 mb-lg-0">
-                                    <div class="bg-white p-4 rounded-4">
-                                        <div class="text-primary fw-bolder mb-2">2024</div>
-                                        <div class="mb-2">
-                                            <div class="fw-bolder">Red & White Multimedia Education,
-                                            </div>
-                                            <div class="text-muted">Navsari, Gujrat.</div>
-                                        </div>
-                                        <div class="fst-italic">
-                                            <div class="text-black">Full Stack Development</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-8 text-black">
-                                <div class="resume-contain">
-                                    I am currently pursuing an intensive Full Stack Development program at Red & White
-                                    Multimedia Education in Navsari. This comprehensive course provides in-depth
-                                    training in both front-end and back-end technologies, including HTML, CSS,
-                                    JavaScript, React, Node.js, and MongoDB. Through hands-on projects, I am developing
-                                    the skills necessary to design, develop, and maintain sophisticated web
-                                    applications.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!------------------------- Contacts ----------------------->
-        <section class="contact" id="contact">
-            <div class="contact-title text-center">
-                <h2 class="mb-5 fw-bold">Contact</h2>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="contact-item card border-0 rounded-0 bg-light px-4 p-3 mb-4">
-                                    <i class="bi bi-geo-alt text-primary fs-1"></i>
-                                    <h3 class="fs-5 fw-bold mt-3">Address</h3>
-                                    <p class="mt-2">31/12,suraj deep society, <br>Navsari,Gujarat, 396450</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="contact-item card border-0 rounded-0 bg-light px-4 p-3 ">
-                                    <i class="bi bi-telephone  text-primary fs-1"></i>
-                                    <h3 class="fs-5 fw-bold mt-3">Call Us</h3>
-                                    <p class="mt-2">+91 95109 33052<br>+91 94848 42425</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="contact-item card border-0 rounded-0 bg-light px-4 p-3 mt-4">
-                                    <i class="bi bi-envelope text-primary fs-1"></i>
-                                    <h3 class="fs-5 fw-bold mt-3">Email Us</h3>
-                                    <p class="mt-2">patelkomal2332@gmail.com<br>komalpatel5575@gmail.com</p>
-                                </div>
-                            </div>
-                            <!-- <div class="col-md-6">
-                                <div class="contact-item card border-0 rounded-0 bg-light px-4 p-3 mt-4">
-                                    <i class="bi bi-share text-primary fs-1"></i>
-                                    <h3 class="fs-5 fw-bold mt-3">Social Profiles</h3>
-                                    <div class="contact-social-link mt-4">
-                                        <a href="https://github.com/patelkomal23" target="_blank"
-                                            class="text-decoration-none p-2 fs-2 text-black"><i
-                                                class="bi bi-github"></i></a>
-                                        <a href="https://www.linkedin.com/in/patel-komal-912683317" target="_blank"
-                                            class="text-decoration-none p-2 fs-2 text-black"><i
-                                                class="bi bi-linkedin"></i></a>
-                                        <a href="https://www.instagram.com/_komal.__23" target="_blank"
-                                            class="text-decoration-none p-2 fs-2 text-black"><i
-                                                class="bi bi-instagram"></i></a>
-                                        <a href="javascript:void(0)" target="_blank"
-                                            class="text-decoration-none p-2 fs-2 text-black"><i
-                                                class="bi bi-discord"></i></a>
-                                    </div>
-                                </div>
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="contact-contain bg-light p-5">
-                            <form action="">
-                                <div class="row  gy-5">
-                                    <div class="col-md-6">
-                                        <input type="text" name="name" class="form-control rounded-0"
-                                            placeholder="Your Name" required="">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="email" class="form-control rounded-0" name="email"
-                                            placeholder="Your Email" required="">
-                                    </div>
-                                    <div class="col-12">
-                                        <input type="text" class="form-control rounded-0" name="subject"
-                                            placeholder="Subject" required="">
-                                    </div>
-                                    <div class="col-12">
-                                        <textarea class="form-control rounded-0" name="message" rows="6"
-                                            placeholder="Message" required=""></textarea>
-                                    </div>
-                                    <div class="col-12 text-center">
-                                        <button class="btn btn-primary" type="submit">Send Message</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="footer-inner text-center">
                 <div class="row">
-                    <div class="col-12 mt-5">
-                        <p>© <span>Copyright</span> <strong class="px-1 sitename">Portfolio</strong> <span>All Rights
-                         Reserved</span></p>
+                    <div class="col-12 mt-5 text-white">
+                        <p>© <span>Copyright</span> <strong class="px-1 text-dark">Portfolio</strong> <span>All Rights
+                                Reserved</span></p>
                     </div>
                     <div class="col-12">
                         <div class="footer-social-link mt-3">
                             <a href="https://github.com/patelkomal23" target="_blank"
-                                class="text-decoration-none p-2 px-3 fs-3 border rounded-circle text-secondary"><i class="bi bi-github"></i></a>
+                                class="text-decoration-none p-2 px-3 fs-3 border rounded-circle text-white"><i
+                                    class="bi bi-github"></i></a>
                             <a href="https://www.linkedin.com/in/patel-komal-912683317" target="_blank"
-                                class="text-decoration-none p-2 px-3 fs-3 border rounded-circle text-secondary"><i class="bi bi-linkedin"></i></a>
+                                class="text-decoration-none p-2 px-3 fs-3 border rounded-circle text-white"><i
+                                    class="bi bi-linkedin"></i></a>
                             <a href="https://www.instagram.com/_komal.__23" target="_blank"
-                                class="text-decoration-none p-2 px-3 fs-3 border rounded-circle text-secondary"><i class="bi bi-instagram"></i></a>
+                                class="text-decoration-none p-2 px-3 fs-3 border rounded-circle text-white"><i
+                                    class="bi bi-instagram"></i></a>
                             <a href="javascript:void(0)" target="_blank"
-                                class="text-decoration-none p-2 px-3 fs-3 border rounded-circle text-secondary"><i class="bi bi-discord"></i></a>
+                                class="text-decoration-none p-2 px-3 fs-3 border rounded-circle text-white"><i
+                                    class="bi bi-discord"></i></a>
                         </div>
                     </div>
                     <div class="col-12 mt-4">
-                        <p class=" fs-5 mb-0 mx-auto">Designed by <a href="javascript:void(0)" class="text-decoration-none text-primary">Komal Patel</a></p>
+                        <p class=" fs-5 mb-0 mx-auto text-white">Designed by <a href="javascript:void(0)"
+                                class="text-decoration-none text-warning">Komal Patel</a></p>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
 
 
