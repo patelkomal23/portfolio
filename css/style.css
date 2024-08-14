@@ -24,12 +24,13 @@ header a {
 
 header a:hover,
 header a.active {
-    color: #79a1ff !important;
+    color: #aa9ec7 !important;
 }
 
 .home {
     height: 100vh;
-    background: linear-gradient(-90deg, #79a1ff 65%, #fff 30%);
+    /* background: linear-gradient(-90deg, #a18cd1 65%, #fff 30%); */
+    background-image: linear-gradient(-90deg, #9e95b4 65%, #ffffff 0);
 }
 
 /* home */
@@ -64,42 +65,144 @@ header a.active {
 }
 
 .home-image {
-    width: 500px;
-    height: 500px;
-    background: #79a1ff;
+    width: 400px;
+    height: 400px;
+    background: #9e95b4;
     border-radius: 50%;
     border: 25px solid #ffffff;
-    margin-top: 20% !important;
-    outline: 25px solid #79a1ff;
+    margin-top: 30% !important;
+    outline: 25px solid #9e95b4;
 
 }
 
 .home-image img {
-    max-width: 800px !important;
-    bottom: 25px;
+    max-width: 700px !important;
+    bottom: 27px;
 }
 
 .home-contain .home-title {
-    margin-top: 30% !important;
+    margin-top: 40% !important;
     text-align: right;
 }
 
 .home .home-contain b {
-    color: #0a012c;
+    background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+    background-clip: text;
+    color: transparent;
 }
+
 
 /* about */
 .about {
-    padding: 80px 0;
-
+    padding: 70px 0;
 }
 
 .about .about-title h2 {
-    color: #015761;
-    font-size: 50px;
+    margin: 16px;
+    font-size: 3rem;
+    color: #ccc;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 2s linear;
+    position: relative;
 }
 
-.about .about-img img {
-    width: auto;
-    object-fit: cover;
+.about .about-title h2::before {
+    content: "ABOUT ME";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    color: #4c3e72;
+    overflow: hidden;
+    transition: width 2s linear;
+}
+
+.about .about-title h2:hover::before {
+    width: 100%;
+}
+
+.about .about-contain h3 {
+    background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+
+.about .list {
+    position: relative;
+}
+
+.about .list::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 9px;
+    width: 1px;
+    height: 90%;
+    background-color: #9e95b4;
+    margin: auto;
+    z-index: -1;
+}
+
+.about .items {
+    margin: 8px 0px;
+}
+
+.about .items b {
+    font-weight: 600;
+    font-size: 17px;
+    color: black;
+}
+
+.about .items span {
+    margin: 0 3px;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.726);
+}
+
+.about .items::before {
+    content: '';
+    margin: 5px 0px;
+    position: absolute;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border: 2px solid #ad2020;
+    border-radius: 50%;
+}
+/* contact */
+.contact{
+    padding: 80px 0;
+
+}
+.contact .contact-title h2 {
+    margin: 16px;
+    font-size: 3rem;
+    color: #ccc;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 2s linear;
+    position: relative;
+}
+.contact .contact-title h2::before {
+    content: "CONTACT";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    color: #4c3e72;
+    overflow: hidden;
+    transition: width 2s linear;
+}
+
+.contact .contact-title h2:hover::before {
+    width: 100%;
 }
