@@ -15,9 +15,6 @@ header .btn-close {
     height: 50px;
 }
 
-/* header .scrolled{
-    background-color: black;
-} */
 header a {
     transition: .3s;
 }
@@ -29,8 +26,7 @@ header a.active {
 
 .home {
     height: 100vh;
-    /* background: linear-gradient(-90deg, #a18cd1 65%, #fff 30%); */
-    background-image: linear-gradient(-90deg, #9e95b4 65%, #ffffff 0);
+    background-image: linear-gradient(90deg, #aaaaaa 65%, #ffffff 0);
 }
 
 /* home */
@@ -67,11 +63,11 @@ header a.active {
 .home-image {
     width: 400px;
     height: 400px;
-    background: #9e95b4;
+    background: #aaaaaa;
     border-radius: 50%;
     border: 25px solid #ffffff;
     margin-top: 30% !important;
-    outline: 25px solid #9e95b4;
+    outline: 25px solid #aaaaaa;
 
 }
 
@@ -95,13 +91,17 @@ header a.active {
 /* about */
 .about {
     padding: 70px 0;
+   /* background-image: url("");
+background-position: center;
+background-repeat: no-repeat;
+width: 100%; */
+
 }
 
 .about .about-title h2 {
     margin: 16px;
     font-size: 3rem;
-    color: #ccc;
-    text-transform: uppercase;
+    color: #000000;
     font-weight: 600;
     transition: all 2s linear;
     position: relative;
@@ -111,13 +111,13 @@ header a.active {
     content: "ABOUT ME";
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
+    left:0%;
+    right: 20;
     bottom: 0;
     width: 0;
-    color: #4c3e72;
+    color: #3902ff;
     overflow: hidden;
-    transition: width 2s linear;
+    transition: width 1s linear;
 }
 
 .about .about-title h2:hover::before {
@@ -143,7 +143,7 @@ header a.active {
     left: 9px;
     width: 1px;
     height: 90%;
-    background-color: #9e95b4;
+    background-color: #aaaaaa;
     margin: auto;
     z-index: -1;
 }
@@ -179,13 +179,13 @@ header a.active {
 /* contact */
 .contact{
     padding: 80px 0;
+    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
 
 }
 .contact .contact-title h2 {
     margin: 16px;
     font-size: 3rem;
-    color: #ccc;
-    text-transform: uppercase;
+    color: #180a3b;
     font-weight: 600;
     transition: all 2s linear;
     position: relative;
@@ -194,15 +194,42 @@ header a.active {
     content: "CONTACT";
     position: absolute;
     top: 0;
-    left: 0;
+    left:4%;
     right: 0;
     bottom: 0;
     width: 0;
-    color: #4c3e72;
+    color: #ffffff;
     overflow: hidden;
-    transition: width 2s linear;
+    transition: width 1s linear;
 }
 
 .contact .contact-title h2:hover::before {
     width: 100%;
+}
+
+/* skill */
+.skill{
+    padding: 80px 0;
+    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+
+}
+.skill .skill-title h2 {
+    margin: 16px;
+    font-size: 3rem;
+    color: #180a3b;
+    font-weight: 600;
+    transition: all 2s linear;
+    position: relative;
+}
+.skill .skill-title h2::before {
+    content: "SKILLS";
+    position: absolute;
+    top: 0;
+    left:0%;
+    right: 20;
+    bottom: 0;
+    width: 0;
+    color: #3902ff;
+    overflow: hidden;
+    transition: width 1s linear;
 }
