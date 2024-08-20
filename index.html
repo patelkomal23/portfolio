@@ -32,19 +32,19 @@
                 <div class="offcanvas-body text-black">
                     <ul class="navbar-nav align-items-lg-center ms-auto">
                         <li class="mx-lg-2">
-                            <a href="#home" class="nav-link text-white  active">Home </a>
+                            <a href="#home" class="text-decoration-none text-white  active">Home </a>
                         </li>
                         <li class="mx-lg-2">
-                            <a href="#about" class="nav-link text-white ">About</a>
+                            <a href="#about" class="text-decoration-none text-white ">About</a>
                         </li>
                         <li class="mx-lg-3">
-                            <a href="#home" class="nav-link text-white ">Resume</a>
+                            <a href="#home" class="text-decoration-none text-white ">Resume</a>
                         </li>
                         <li class="me-lg-4">
-                            <a href="#home" class="nav-link text-white ">Project</a>
+                            <a href="#project" class="text-decoration-none text-white ">Project</a>
                         </li>
                         <li class="me-lg-4">
-                            <a href="#home" class="nav-link text-white ">Skills</a>
+                            <a href="#skills" class="text-decoration-none text-white ">Skills</a>
                         </li>
                         <li class="me-lg-4">
                             <a href="#contact" class="nav-link text-white ">Contact</a>
@@ -56,19 +56,20 @@
     </header>
     <main>
         <!------------------------- home ----------------------->
-        <section class="home d-flex align-items-center  justify-content-between">
+        <section class="home d-flex">
             <div class="container py-5">
                 <div class="row py-5">
-                    <div class="col-lg-6 col-md-12 py-5 mr-auto">
+                    <div class="col-lg-6 col-md-12 py-5 text-right">
                         <div class="home-contain">
-                            <div class="home-title mt-4">
-                                <h4 class="fw-bold text-black">Hello, It's Me</h4>
-                                <h1 class="fw-bold text-white display-5">Komal Patel</h1>
+                            <div class="home-title">
+                                <h1 class="h1 display-5 fw-bold">
+                                    Hi, I'm <b class="">Komal&nbsp;Patel</b>.
+                                </h1>
                                 <h2 class="ah-headline">
-                                    <span class="text-black fs-2 fw-bold">And I'm a</span>
+                                    <span class="fs-2 fw-bold ima">And I'm a</span>
                                     <span class="ah-words-wrapper">
-                                        <b class="is-visible fst-italic fs-2">Developer...</b>
-                                        <b class="fst-italic fs-2">Web Designer...</b>
+                                        <b class="is-visible fst-italic fs-2 clip">Developer...</b>
+                                        <b class="fst-italic fs-2 clip">Web Designer...</b>
                                     </span>
                                 </h2>
                                 <div class="home-social-link">
@@ -84,17 +85,22 @@
                                     <a href="javascript:void(0)" target="_blank" class="text-decoration-none"><i
                                             class="bi bi-discord  d-inline-flex justify-content-center align-items-center rounded-5 fs-5"></i></a>
                                 </div>
-                                <a href=""
-                                    class="home-btn text-decoration-none d-inline-block rounded-5 fs-5  text-white">Project</a>
-                                <a href=""
-                                    class="home-btn text-decoration-none d-inline-block rounded-5 fs-5  text-white">Contact</a>
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-1 p-2 rounded-5">Contact Me</a>
+                                    <a href="#" class="btn btn-2 p-2 rounded-5">About Me</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 py-5 mr-auto">
-                        <div class="home-image  d-flex align-items-center  justify-content-center">
-                            <img src="img/profileic-removebg-preview.png" alt="" class="position-relative img-fluid"
-                                srcset="">
+                    <div class="col-lg-6 col-md-12 mr-auto">
+                        <div class="right position-relative d-flex align-items-center justify-content-center">
+                            <div class="home-bg position-absolute top-50%"></div>
+
+                            <div class="home-image position-relative z-1">
+                                <img src="./img/homeexm.png" alt="" class="img-fluid home-img">
+                                <div class="shape position-absolute shape-1"></div>
+                                <div class="shape shape-2"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -103,17 +109,28 @@
         <!------------------------- about ----------------------->
         <section class="about" id="about">
             <div class="container">
-                <div class="about-title">
-                    <h2 class="position-relative">ABOUT ME</h2>
+                <div class="about-title position-relative p-5 mt-5">
+                    <h2>About</h2>
+                    <h2>About</h2>
                 </div>
-              
                 <div class="row">
-                    <div class="col-lg-7 col-md-6">
+                    <div class="col-lg-6 col-md-12 mr-auto">
+                        <div class="right position-relative d-flex align-items-center justify-content-center">
+                            <div class="about-bg position-absolute top-50%"></div>
+                            <div class="about-image position-relative z-1">
+                                <img src="./img/homeexm.png" alt="" class="img-fluid about-img">
+                                <div class="shape shape-1"></div>
+                                <div class="shape shape-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
                         <div class="about-contain p-2">
                             <h3 class="fw-bold mb-2">Fullstack Developer</h3>
-                            <p class="text-right">Hello, my name is KOMAL PATEL, and I'm a full stack developer. I have
-                                a strong <br> command over both front-end and back-end technologies, allowing me to
-                                build <br>complete and scalable applications.</p>
+                            <p class="text-right text-black">Hello, my name is KOMAL PATEL, and I'm a full stack
+                                developer. I have
+                                a strong  command over both front-end and back-end technologies, allowing me to
+                                build complete and scalable applications.</p>
                             <div class="about-information">
                                 <ul class="list-unstyled list  mt-1 px-4">
                                     <li class="items"><b class="">Name: </b><span class="">Komal Patel</span></li>
@@ -129,18 +146,152 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-5">
-                        <img src="img/about1.j" alt="img" srcset="" class="img-fluid">
+                </div>
+            </div>
+        </section>
+        <!------------------------- Project ----------------------->
+        <section class="project" id="project">
+            <div class="container">
+                <div class="project-title">
+                    <h2></h2>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="project-inner">
+                            <div class="project-content position-relative  rounded-3">
+                                <div class="project-img">
+                                    <img src="./img/project-1.png" alt="" class="img-fluid rounded-3">
+                                </div>
+                                <div
+                                    class="project-back d-flex align-items-center justify-content-center position-absolute">
+                                    <div class="text-center text-white">
+                                        <h3 class="fs-5 fw-bold">Online Pharmacy Store</h3>
+                                        <p class="">Internet pharmacies are also recommended to some patients by their
+                                            physicians
+                                            if they are home-bound.
+                                        </p>
+                                        <a href="https://polite-sundae-95d4b8.netlify.app/" target="_blank"
+                                            class="text-decoration-none fs-2 text-white"><i
+                                                class="bi bi-link-45deg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="project-inner">
+                            <div class="project-content position-relative rounded-3">
+                                <div class="project-img">
+                                    <img src="./img/project-3.png" alt="" class="img-fluid rounded-3">
+                                </div>
+                                <div
+                                    class="project-back d-flex align-items-center justify-content-center position-absolute">
+                                    <div class="text-center text-white">
+                                        <h3 class="fs-5 fw-bold">Transition Card</h3>
+                                        <p class="">CSS transitions provide a way to control animation speed when
+                                            changing CSS properties.
+                                        </p>
+                                        <a href="https://vocal-empanada-87fb4b.netlify.app/" target="_blank"
+                                            class="text-decoration-none fs-2 text-white"><i
+                                                class="bi bi-link-45deg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="project-inner">
+                            <div class="project-content position-relative rounded-3">
+                                <div class="project-img">
+                                    <img src="./img/project-5.png" alt="" class="img-fluid rounded-3">
+                                </div>
+                                <div
+                                    class="project-back d-flex align-items-center justify-content-center position-absolute">
+                                    <div class="text-center text-white">
+                                        <h3 class="fs-5 fw-bold">Landing Page</h3>
+                                        <p class="">In digital marketing, a landing page is a standalone web page,
+                                            created specifically for a marketing or advertising campaign.
+                                        </p>
+                                        <a href="https://66c451a323340ed611024303--spontaneous-florentine-d6123a.netlify.app/"
+                                            target="_blank" class="text-decoration-none fs-2 text-white"><i
+                                                class="bi bi-link-45deg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="project-inner">
+                            <div class="project-content position-relative rounded-3">
+                                <div class="project-img">
+                                    <img src="./img/project-6.png" alt="" class="img-fluid rounded-3">
+                                </div>
+                                <div
+                                    class="project-back d-flex align-items-center justify-content-center position-absolute">
+                                    <div class="text-center text-white">
+                                        <h3 class="fs-5 fw-bold">Animate On Scroll</h3>
+                                        <p class="">ne popular library that can help you achieve this effect is called
+                                            AOS (Animate On Scroll).
+                                        </p>
+                                        <a href="https://melodious-smakager-339f8a.netlify.app/" target="_blank"
+                                            class="text-decoration-none fs-2 text-white"><i
+                                                class="bi bi-link-45deg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="project-inner">
+                            <div class="project-content position-relative rounded-3">
+                                <div class="project-img">
+                                    <img src="./img/project-7.png" alt="" class="img-fluid rounded-3">
+                                </div>
+                                <div
+                                    class="project-back d-flex align-items-center justify-content-center position-absolute">
+                                    <div class="text-center text-white">
+                                        <h3 class="fs-5 fw-bold">Admin Panel</h3>
+                                        <p class="">is a web-based interface that allows authorized users to manage and
+                                            interact with a website's content and data.
+                                        </p>
+                                        <a href="https://stalwart-gingersnap-7d5cc0.netlify.app/" target="_blank"
+                                            class="text-decoration-none fs-2 text-white"><i
+                                                class="bi bi-link-45deg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="project-inner">
+                            <div class="project-content position-relative rounded-3">
+                                <div class="project-img">
+                                    <img src="./img/project-8.png" alt="" class="img-fluid rounded-3">
+                                </div>
+                                <div
+                                    class="project-back d-flex align-items-center justify-content-center position-absolute">
+                                    <div class="text-center text-white">
+                                        <h3 class="fs-5 fw-bold">Marketing Solution Agency</h3>
+                                        <p class="">
+                                            A marketing agency is a service provider that helps businesses use marketing
+                                            to reach, nurture, and convert users.
+                                        </p>
+                                        <a href="https://euphonious-cucurucho-6e431e.netlify.app/" target="_blank"
+                                            class="text-decoration-none fs-2 text-white"><i
+                                                class="bi bi-link-45deg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
         <!------------------------- skills ----------------------->
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="container">
                 <div class="skills-title">
-                    <h2 class="position-relative">SKILLS</h2>
+                    <h2 class="position-relative"></h2>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
@@ -154,7 +305,8 @@
                                             <p>Hypertext Markup Language (HTML) is the standard markup language for
                                                 documents designed to be displayed in a web browser. It defines the
                                                 content and structure of web content.</p>
-                                            <a href="" class="text-decoration-none">learn more...</a>
+                                            <a href="https://en.wikipedia.org/wiki/HTML" target="_blank"
+                                                class="text-decoration-none">learn more...</a>
                                         </div>
                                     </li>
                                     <li>
@@ -164,7 +316,8 @@
                                             <p>Cascading Style Sheets (CSS) is a style sheet language used for
                                                 specifying the presentation and styling of a document written in a
                                                 markup language such as HTML or XML.</p>
-                                            <a href="" class="text-decoration-none">learn more...</a>
+                                            <a href="https://en.wikipedia.org/wiki/CSS" target="_blank"
+                                                class="text-decoration-none">learn more...</a>
                                         </div>
                                     </li>
                                     <li>
@@ -196,93 +349,105 @@
         </section>
         <!------------------------- contact ----------------------->
         <section class="contact" id="contact">
-
-            <div class="contact-title">
-                <h2 class="px-5 m-5 fw-bold">CONTACT</h2>
-            </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-lg-6 col-md-12">
+                        <form action="#">
+                            <h1 class="sub-heading mb-5">Contact Me </h1>
+                            <input type="text" class="input form-control" placeholder="your name" required>
+                            <input type="text" class="input form-control" placeholder="your email" required>
+                            <textarea class="input form-control" cols="30" rows="5" placeholder="Your Subject..."></textarea>
+                            <input type="submit" class="input form-control submit fw-bold" value="Send Message">
+                        </form>
                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="contact-item card border-0 rounded-0 bg-light px-4 p-3 mb-4">
-                                    <i class="bi bi-geo-alt text-primary fs-1"></i>
-                                    <h3 class="fs-5 fw-bold mt-3">Address</h3>
-                                    <p class="mt-2">31/12,suraj deep society, <br>Navsari,Gujarat, 396450</p>
+                            <div class="col-lg-4 mt-3">
+                                <div class="contact-details">
+                                    <div class="contact-text">
+                                        <i class="bi bi-geo-alt d-inline-flex justify-content-center align-items-center rounded-5 fs-5 "></i>
+                                            <h3 class="fs-5 fw-bold">Address</h3>
+                                            <p class="">31/12,suraj deep society,Navsari,Gujarat, 396450</p>
+                                      
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="contact-item card border-0 rounded-0 bg-light px-4 p-3 ">
-                                    <i class="bi bi-telephone  text-primary fs-1"></i>
-                                    <h3 class="fs-5 fw-bold mt-3">Call Us</h3>
-                                    <p class="mt-2">+91 95109 33052<br>+91 94848 42425</p>
+                            <div class="col-lg-4 mt-3">
+                                <div class="contact-details">
+                                    <div class="contact-text">
+                                        <i class="bi bi-telephone d-inline-flex justify-content-center align-items-center rounded-5 fs-5"></i>
+                                        <h3 class="fs-5 fw-bold ">Call Us</h3>
+                                        <p class="">+91 95109 33052<br>+91 94848 42425</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="contact-item card border-0 rounded-0 bg-light px-4 p-3 mt-2">
-                                    <i class="bi bi-envelope text-primary fs-1"></i>
-                                    <h3 class="fs-5 fw-bold mt-3">Email Us</h3>
-                                    <p class="mt-2">patelkomal2332@gmail.com<br>komalpatel5575@gmail.com</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="contact-item card border-0 rounded-0 bg-light px-4 p-3 mt-2">
-                                    <i class="bi bi-share text-primary fs-1"></i>
-                                    <h3 class="fs-5 fw-bold mt-3">Social Profiles</h3>
-                                    <div class="contact-social-link mt-4">
-                                        <a href="https://github.com/patelkomal23" target="_blank"
-                                            class="text-decoration-none p-2 fs-2 text-black"><i
-                                                class="bi bi-github"></i></a>
-                                        <a href="https://www.linkedin.com/in/patel-komal-912683317" target="_blank"
-                                            class="text-decoration-none p-2 fs-2 text-black"><i
-                                                class="bi bi-linkedin"></i></a>
-                                        <a href="https://www.instagram.com/_komal.__23" target="_blank"
-                                            class="text-decoration-none p-2 fs-2 text-black"><i
-                                                class="bi bi-instagram"></i></a>
-                                        <a href="javascript:void(0)" target="_blank"
-                                            class="text-decoration-none p-2 fs-2 text-black"><i
-                                                class="bi bi-discord"></i></a>
+                            <div class="col-lg-4 mt-3">
+                                <div class="contact-details">
+                                    <div class="contact-text">
+                                        <i class="bi bi-envelope d-inline-flex justify-content-center align-items-center rounded-5 fs-5"></i>
+                                        <h3 class="fs-5 fw-bold">Email Us</h3>
+                                        <p class="">patelkomal2332@gmail.com<br>komalpatel5575@gmail.com</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="contact-contain bg-light p-5">
-                            <form action="">
-                                <div class="row  gy-5">
-                                    <div class="col-md-6">
-                                        <input type="text" name="name" class="form-control rounded-0"
-                                            placeholder="Your Name" required="">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="email" class="form-control rounded-0" name="email"
-                                            placeholder="Your Email" required="">
-                                    </div>
-                                    <div class="col-12">
-                                        <input type="text" class="form-control rounded-0" name="subject"
-                                            placeholder="Subject" required="">
-                                    </div>
-                                    <div class="col-12">
-                                        <textarea class="form-control rounded-0" name="message" rows="6"
-                                            placeholder="Message" required=""></textarea>
-                                    </div>
-                                    <div class="col-12 text-center">
-                                        <button class="btn btn-primary" type="submit">Send Message</button>
-                                    </div>
-                                </div>
-                            </form>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="map-container position-relative">
+                            <div class="mapBg position-absolute"></div>
+                            <div class="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9914410252845!2d2.291906375932066!3d48.85837360070842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e0!3m2!1sen!2set!4v1695627657575!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <iframe
+                <!-- <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d476949.7010855652!2d72.64654073888404!3d20.94570560190344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0f7e5f66c0a35%3A0xf05084bad10b7748!2sRed%20%26%20White%20Multimedia%20Education%20-%20Navsari!5e0!3m2!1sen!2sin!4v1722954581610!5m2!1sen!2sin"
-                    width="100%" height="400"></iframe>
+                    width="100%" height="400"></iframe> -->
             </div>
         </section>
-       
     </main>
-
+    <footer>
+        <div class="footer-waves">
+            <div class="wave position-absolute left-0" id="wave1"></div>
+            <div class="wave position-absolute left-0" id="wave2"></div>
+            <div class="wave position-absolute left-0" id="wave3"></div>
+            <div class="wave position-absolute left-0" id="wave4"></div>
+        </div>
+        <ul class="footer-icon list-unstyled d-flex justify-content-center align-items-center">
+            <li> <a href="https://github.com/patelkomal23" target="_blank"
+                    class="text-decoration-none text-white fs-2 p-2 d-inline-block"><i class="bi bi-github"></i></a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/patel-komal-912683317" target="_blank"
+                    class="text-decoration-none  text-white fs-2 p-2 d-inline-block"><i class="bi bi-linkedin"></i></a>
+            </li>
+            <li><a href="https://www.instagram.com/_komal.__23" target="_blank"
+                    class="text-decoration-none  text-white fs-2 p-2 d-inline-block"><i
+                        class="bi bi-instagram "></i></a></li>
+            <li> <a href="javascript:void(0)" target="_blank"
+                    class="text-decoration-none text-white fs-2 p-2 d-inline-block"><i class="bi bi-discord"></i></a>
+            </li>
+        </ul>
+        <ul class="footer-menu list-unstyled d-flex justify-content-center align-items-center">
+            <li class="">
+                <a href="#home" class="text-decoration-none text-white  fs-4 p-2 d-inline-block">Home </a>
+            </li>
+            <li class="">
+                <a href="#about" class="text-decoration-none text-white  fs-4 p-2 d-inline-block ">About</a>
+            </li>
+            <li class="">
+                <a href="#home" class="text-decoration-none text-white  fs-4 p-2 d-inline-block ">Resume</a>
+            </li>
+            <li class="">
+                <a href="#home" class="text-decoration-none text-white  fs-4 p-2 d-inline-block ">Project</a>
+            </li>
+            <li class="">
+                <a href="#skills" class="text-decoration-none text-white  fs-4 p-2 d-inline-block ">Skills</a>
+            </li>
+            <li class="">
+                <a href="#contact" class="text-decoration-none text-white  fs-4 p-2 d-inline-block ">Contact</a>
+            </li>
+        </ul>
+        <p class="text-white fs-4 text-center">All Right Reserved</p>
+    </footer>
 
 
 
