@@ -55,7 +55,7 @@
   }
 
   .timeline ul li:hover::before {
-    background-color: #e00909;
+    background-color: #05275c;
   }
  
 }

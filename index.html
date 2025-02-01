@@ -15,50 +15,43 @@
 <body>
 
     <!------------------------- header ----------------------->
-
-    <header class="navbar navbar-expand-lg fixed-top">
+    <header class="navbar navbar-expand-lg py-2 fixed-top" data-bs-theme="dark">
         <div class="container">
             <a href="javascript:void(0)" class="navbar-brand">
                 <span class="text-white">&lt</span><img src="img/header-logo.png" alt="img" srcset=""
                     style="width: 40%; height: 50%;"><span class="text-white">&#47&gt</span></a>
-            <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#header">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end bg-dark" id="header">
-                <div class="offcanvas-header">
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvasDark"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body text-black">
-                    <ul class="navbar-nav align-items-lg-center ms-auto">
-                        <li class="mx-lg-2">
-                            <a href="#home" class="text-decoration-none text-white  active">Home </a>
-                        </li>
-                        <li class="mx-lg-2">
-                            <a href="#about" class="text-decoration-none text-white ">About</a>
-                        </li>
-                        <li class="mx-lg-3">
-                            <a href="#resume" class="text-decoration-none text-white ">Resume</a>
-                        </li>
-                        <li class="me-lg-4">
-                            <a href="#project" class="text-decoration-none text-white ">Project</a>
-                        </li>
-                        <li class="me-lg-4">
-                            <a href="#skills" class="text-decoration-none text-white ">Skills</a>
-                        </li>
-                        <li class="me-lg-4">
-                            <a href="#contact" class="nav-link text-white ">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <nav class=" navbar-collapse collapse" id="menu">
+                <ul class="navbar-nav align-items-lg-center ms-auto">
+                    <li class="mx-lg-2">
+                        <a href="#home" class="text-decoration-none active text-white fw-semibold fs-6">Home </a>
+                    </li>
+                    <li class="mx-lg-2">
+                        <a href="#about" class="text-decoration-none text-white fw-semibold fs-6">About</a>
+                    </li>
+                    <li class="mx-lg-3">
+                        <a href="#resume" class="text-decoration-none text-white fw-semibold fs-6">Resume</a>
+                    </li>
+                    <li class="me-lg-4">
+                        <a href="#project" class="text-decoration-none text-white fw-semibold fs-6">Project</a>
+                    </li>
+                    <li class="me-lg-4">
+                        <a href="#skills" class="text-decoration-none text-white fw-semibold fs-6">Skills</a>
+                    </li>
+                    <li class="me-lg-4">
+                        <a href="#contact" class="text-decoration-none text-white fw-semibold fs-6">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
         <!------------------------- home ----------------------->
         <section class="home d-flex">
-            <div class="container py-5">
-                <div class="row py-5">
+            <div class="container py-4">
+                <div class="row py-4">
                     <div class="col-lg-6 col-md-12 py-5 text-right">
                         <div class="home-contain">
                             <div class="home-title">
@@ -82,17 +75,18 @@
                                     <a href="https://www.instagram.com/_komal.__23" target="_blank"
                                         class="text-decoration-none"><i
                                             class="bi bi-instagram  d-inline-flex justify-content-center align-items-center rounded-5 fs-5"></i></a>
-                                    <a href="javascript:void(0)" target="_blank" class="text-decoration-none"><i
+                                    <a href="https://github.com/patelkomal23" target="_blank"
+                                        class="text-decoration-none"><i
                                             class="bi bi-discord  d-inline-flex justify-content-center align-items-center rounded-5 fs-5"></i></a>
                                 </div>
                                 <div class="btn-group">
-                                    <a href="#" class="btn btn-1 p-2 rounded-5">Contact Me</a>
-                                    <a href="#" class="btn btn-2 p-2 rounded-5">About Me</a>
+                                    <a href="#contact" class="btn btn-1 p-2 rounded-5">Contact Me</a>
+                                    <a href="#about" class="btn btn-2 p-2 rounded-5">About Me</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 mr-auto">
+                    <div class="col-lg-6 col-md-12 mr-auto mb-5">
                         <div class="right position-relative d-flex align-items-center justify-content-center">
                             <div class="home-bg position-absolute top-50%"></div>
 
@@ -106,7 +100,9 @@
                 </div>
             </div>
         </section>
+
         <!------------------------- about ----------------------->
+
         <section class="about" id="about">
             <div class="container">
                 <div class="about-title ">
@@ -148,7 +144,9 @@
                 </div>
             </div>
         </section>
+
         <!------------------------- resume ----------------------->
+
         <section class="resume" id="resume">
             <div class="container">
                 <div class="resume-title">
@@ -158,7 +156,8 @@
                     <div class="resume-timeline">
                         <div class="resume-inner">
                             <a href="#" class="resume-content text-decoration-none position-relative z-1 d-block">
-                                <h3 class="title  position-relative z-1 fs-5 fw-semibold">Red & White Multimedia Education</h3>
+                                <h3 class="title  position-relative z-1 fs-5 fw-semibold">Red & White Multimedia
+                                    Education</h3>
                                 <p class="text-secondary">
                                     I am currently pursuing an intensive Full Stack Development program at Red & White
                                     Multimedia Education in Navsari. This comprehensive course provides in-depth
@@ -170,33 +169,16 @@
                         </div>
                         <div class="resume-inner">
                             <a href="#" class="resume-content text-decoration-none position-relative z-1 d-block">
-                                <h3 class="title  position-relative z-1 fs-5 fw-semibold">Bachelor of Computer Application- BCA</h3>
+                                <h3 class="title  position-relative z-1 fs-5 fw-semibold">Bachelor of Computer
+                                    Application- BCA</h3>
                                 <p class="text-secondary">
                                     Incorporating my Bachelor of Computer Applications (BCA) degree into my ongoing Full
                                     Stack Development studies at Red & White Multimedia Education, I'm equipped with a
-                                    robust academic foundation and practical coding skills. 
+                                    robust academic foundation and practical coding skills.
                                 </p>
                                 <div class="text-center fw-bold  fs-4">2022-23</div>
                             </a>
                         </div>
-                        <!-- <div class="resume-inner">
-                            <a href="#" class="resume-content text-decoration-none position-relative z-1 d-block">
-                                <h3 class="title  position-relative z-1 fs-5 fw-semibold">Web Designing</h3>
-                                <p class="text-secondary">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
-                                </p>
-                                <div class="text-center fw-bold  fs-4">2023</div>
-                            </a>
-                        </div>
-                        <div class="resume-inner">
-                            <a href="#" class="resume-content text-decoration-none position-relative z-1 d-block">
-                                <h3 class="title  position-relative z-1 fs-5 fw-semibold">Web Designing</h3>
-                                <p class="text-secondary">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
-                                </p>
-                                <div class="text-center fw-bold  fs-4">2023</div>
-                            </a>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -209,9 +191,9 @@
                     <span>PROJECT</span>
                 </div>
                 <div class="row">
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-4 col-sm-6 mb-4">
                         <div class="project-box position-relative">
-                            <img src="./img/project-1.png" alt="">
+                            <img src="./img/project-1.png" class="rounded-2" alt="">
                             <div class="project-content text-center position-absolute z-1">
                                 <h3 class="fw-bold fs-4 text-white mb-3">Online Pharmacy Store</h3>
                                 <ul class="project-icon list-unstyled">
@@ -225,9 +207,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-4 col-sm-6 mb-4">
                         <div class="project-box position-relative">
-                            <img src="./img/project-3.png" alt="">
+                            <img src="./img/project-3.png" class="rounded-2" alt="">
                             <div class="project-content text-center position-absolute z-1">
                                 <h3 class="fw-bold fs-4 text-white mb-3">Transition Card</h3>
                                 <ul class="project-icon list-unstyled">
@@ -241,9 +223,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-4 col-sm-6 mb-4">
                         <div class="project-box position-relative">
-                            <img src="./img/project-5.png" alt="">
+                            <img src="./img/project-5.png" class="rounded-2" alt="">
                             <div class="project-content text-center position-absolute z-1">
                                 <h3 class="fw-bold fs-4 text-white mb-3">Landing Page</h3>
                                 <ul class="project-icon list-unstyled">
@@ -258,9 +240,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 mt-3">
+                    <div class="col-md-4 col-sm-6 mb-4">
                         <div class="project-box position-relative">
-                            <img src="./img/project-6.png" alt="">
+                            <img src="./img/project-6.png" class="rounded-2" alt="">
                             <div class="project-content text-center position-absolute z-1">
                                 <h3 class="fw-bold fs-4 text-white mb-3">Animate On Scroll</h3>
                                 <ul class="project-icon list-unstyled">
@@ -274,9 +256,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 mt-3">
+                    <div class="col-md-4 col-sm-6 mb-4">
                         <div class="project-box position-relative">
-                            <img src="./img/project-7.png" alt="">
+                            <img src="./img/project-7.png" class="rounded-2" alt="">
                             <div class="project-content text-center position-absolute z-1">
                                 <h3 class="fw-bold fs-4 text-white mb-3">Admin Panel</h3>
                                 <ul class="project-icon list-unstyled">
@@ -290,9 +272,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 mt-3">
+                    <div class="col-md-4 col-sm-6 mb-4">
                         <div class="project-box position-relative">
-                            <img src="./img/project-8.png" alt="">
+                            <img src="./img/project-8.png" class="rounded-2" alt="">
                             <div class="project-content text-center position-absolute z-1">
                                 <h3 class="fw-bold fs-5 text-white mb-3">Marketing Solution Agency</h3>
                                 <ul class="project-icon list-unstyled">
@@ -309,7 +291,9 @@
                 </div>
             </div>
         </section>
+
         <!------------------------- skills ----------------------->
+        
         <section class="skills" id="skills">
             <div class="container">
                 <div class="skills-title">
@@ -349,7 +333,8 @@
                                             <p>Bootstrap (formerly Twitter Bootstrap) is a free and open-source CSS
                                                 framework directed at responsive, mobile-first front-end web
                                                 development.</p>
-                                            <a href="" class="text-decoration-none">learn more...</a>
+                                            <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"
+                                                class="text-decoration-none">learn more...</a>
                                         </div>
                                     </li>
                                     <li>
@@ -359,7 +344,8 @@
                                             <p>jQuery is a JavaScript library designed to simplify HTML DOM tree
                                                 traversal and manipulation, as well as event handling, CSS animations,
                                                 and Ajax.</p>
-                                            <a href="" class="text-decoration-none">learn more...</a>
+                                            <a href="https://en.wikipedia.org/wiki/JQuery"
+                                                class="text-decoration-none">learn more...</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -383,39 +369,6 @@
                                 placeholder="Your Subject..."></textarea>
                             <input type="submit" class="input form-control submit fw-bold" value="Send Message">
                         </form>
-                        <div class="row">
-                            <div class="col-lg-4 mt-3">
-                                <div class="contact-details">
-                                    <div class="contact-text">
-                                        <i
-                                            class="bi bi-geo-alt d-inline-flex justify-content-center align-items-center rounded-5 fs-5 "></i>
-                                        <h3 class="fs-5 fw-bold">Address</h3>
-                                        <p class="">31/12,suraj deep society,Navsari,Gujarat, 396450</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mt-3">
-                                <div class="contact-details">
-                                    <div class="contact-text">
-                                        <i
-                                            class="bi bi-telephone d-inline-flex justify-content-center align-items-center rounded-5 fs-5"></i>
-                                        <h3 class="fs-5 fw-bold ">Call Us</h3>
-                                        <p class="">+91 95109 33052<br>+91 94848 42425</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mt-3">
-                                <div class="contact-details">
-                                    <div class="contact-text">
-                                        <i
-                                            class="bi bi-envelope d-inline-flex justify-content-center align-items-center rounded-5 fs-5"></i>
-                                        <h3 class="fs-5 fw-bold">Email Us</h3>
-                                        <p class="">patelkomal2332@gmail.com<br>komalpatel5575@gmail.com</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <div class="col-lg-6 col-md-12">
                         <div class="map-container position-relative">
@@ -428,10 +381,38 @@
                             </div>
                         </div>
                     </div>
+                    <!-- <div class="col-lg-4 mt-3">
+                        <div class="contact-details">
+                            <div class="contact-text">
+                                <i
+                                    class="bi bi-geo-alt d-inline-flex justify-content-center align-items-center rounded-5 fs-5 "></i>
+                                <h3 class="fs-5 fw-bold">Address</h3>
+                                <p class="">31/12,suraj deep society,Navsari,Gujarat, 396450</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-3">
+                        <div class="contact-details">
+                            <div class="contact-text">
+                                <i
+                                    class="bi bi-telephone d-inline-flex justify-content-center align-items-center rounded-5 fs-5"></i>
+                                <h3 class="fs-5 fw-bold ">Call Us</h3>
+                                <p class="">+91 95109 33052<br>+91 94848 42425</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-3">
+                        <div class="contact-details">
+                            <div class="contact-text">
+                                <i
+                                    class="bi bi-envelope d-inline-flex justify-content-center align-items-center rounded-5 fs-5"></i>
+                                <h3 class="fs-5 fw-bold">Email Us</h3>
+                                <p class="">patelkomal2332@gmail.com<br>komalpatel5575@gmail.com</p>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
-                <!-- <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d476949.7010855652!2d72.64654073888404!3d20.94570560190344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0f7e5f66c0a35%3A0xf05084bad10b7748!2sRed%20%26%20White%20Multimedia%20Education%20-%20Navsari!5e0!3m2!1sen!2sin!4v1722954581610!5m2!1sen!2sin"
-                    width="100%" height="400"></iframe> -->
             </div>
         </section>
     </main>

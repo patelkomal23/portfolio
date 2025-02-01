@@ -1,21 +1,13 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    /* border: 2px solid #000; */
 }
 
 /* header */
 header {
     background-color: #262b40;
-    /* backdrop-filter: blur(30px);
-box-shadow: 0px 0px 30px #262b40;
-border: 2px solid #262b40(255, 255, 255, .18); */
-}
-
-header .btn-close {
-    margin-left: 90%;
-    width: 30px;
-    height: 50px;
 }
 
 header a {
@@ -30,7 +22,7 @@ header a.active {
 /* home */
 .home {
     background: hsl(0, 0%, 100%);
-    padding: 70px 0;
+    padding: 50px 0;
 
 }
 
@@ -132,7 +124,6 @@ header a.active {
 }
 
 .home .shape {
-    /* position: absolute; */
     top: 50%;
     left: 50%;
     border-radius: 50%;
@@ -150,7 +141,6 @@ header a.active {
     width: 92%;
     height: 92%;
     box-shadow: inset 0 -30px 0 hsl(214, 32%, 91%);
-
     z-index: 2;
 }
 
@@ -183,7 +173,9 @@ header a.active {
     }
 }
 .about .about-contain h3 {
-    color: hsl(229, 76%, 66%);
+    background-image: linear-gradient(-225deg, #045270 0%, #4441c5 29%, #FF1361 67%, #FFF800 100%);
+    background-clip: text;
+    color: transparent;
 }
 
 .about .list {
@@ -400,6 +392,8 @@ header a.active {
     transform: scale(1);
     transition: all 0.3s ease 0s;
     object-fit: cover;
+    object-position: center;
+
 }
 .project-box:hover img{
     transform: scale(1.2);
@@ -440,7 +434,7 @@ header a.active {
 /* skill */
 .skills {
     padding: 80px 0;
-    background: hsl(0, 0%, 100%);
+    background: hsl(228, 38%, 85%);
 
 }
 
@@ -496,8 +490,8 @@ header a.active {
 
 .timeline ul li {
     padding: 20px;
-    background: #000000;
-    color: rgb(255, 255, 255);
+    background: #f8f8f8;
+    color: rgb(0, 0, 0);
     border-radius: 10px;
     margin-bottom: 20px;
     transition: .5s ease-in-out;
