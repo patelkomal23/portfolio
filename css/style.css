@@ -181,7 +181,7 @@ header a.active {
 .about .list {
     position: relative;
 }
-
+/* 
 .about .list::after {
     content: '';
     position: absolute;
@@ -193,7 +193,7 @@ header a.active {
     background-color: #000000;
     margin: auto;
     z-index: 1;
-}
+} */
 
 .about .items {
     margin: 8px 0px;
@@ -211,7 +211,7 @@ header a.active {
     font-size: 15px;
     color: rgba(20, 13, 13, 0.726);
 }
-
+/* 
 .about .items::before {
     content: '';
     margin: 5px 0px;
@@ -222,7 +222,7 @@ header a.active {
     background-color: rgb(53, 43, 43);
     border: 2px solid #59b2f4;
     border-radius: 50%;
-}
+} */
 
 
 .about .about-bg {
